@@ -1,0 +1,24 @@
+{% block content %}
+
+
+<form action="" method="post">
+    <p>
+        {{ form.username.label }}
+        {{ form.username(size=30) }}
+    </p>
+    <p>
+        {{ form.password.label }}
+        {{ form.password(size=30) }}
+    </p>
+    <p>
+        {{ form.address.label }} <br>
+        {{ form.address(size=30) }}
+    </p>
+    <p>
+        <input type="submit" name="post_button" value="post"/>
+        <input type="submit" name="cancel_button" value="cancel"/>
+    </p>
+</form>
+
+
+{% endblock %}

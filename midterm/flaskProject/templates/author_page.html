@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<form action="" method="POST">
+    <p>
+        {{ form.password.label }} 
+        {{ form.password(size=30) }}
+    </p>
+    <p> 
+        {{ form.text.label }} <br>
+        {{ form.address(size=30) }}
+    </p>
+    <p>
+        <input type="submit" name="board_button" value="board"/>
+        <input type="submit" name="delete writer_button" value="delete writer"/>
+    </p>
+</form>
+
+
+{% endblock %}

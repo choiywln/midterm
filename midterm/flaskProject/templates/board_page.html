@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="" method="post">
+    <div id="navbar">
+        <h4> <a href="writing_page.html">Title - Writer</a></h4>
+        <p>
+            <a href="writing_page.html">
+            example1 - Sungho <br>
+            example2 - Sungho <br>
+            example3 - Sungho <br>
+            example4 - Sungho <br>
+        </p>
+    </div>
+    <p>
+        <input type="submit" name="write_button" value="write"/>
+        {{ form.password(size=30) }}
+        <input type="submit" name="delete_button" value="delete"/>
+    </p>
+</form>
+
+{% endblock %}
